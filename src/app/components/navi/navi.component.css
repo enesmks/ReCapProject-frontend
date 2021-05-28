@@ -1,0 +1,12 @@
+.position{
+    position: relative;
+    left: 50px;
+}
+.search-position{
+    position: relative;
+    left: -600px;
+}
+.sign-in-position{
+    position: relative;
+    left: -20px;
+}

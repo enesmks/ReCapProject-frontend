@@ -1,0 +1,48 @@
+<div class="container general-position">
+    <main>
+      <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Billing address</h4>
+          <form [formGroup]="registerForm" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-12">
+                <label for="firstName" class="form-label">İsim</label>
+                <input type="text" class="form-control" id="firstName" placeholder="İsim" value="" required formControlName="firstName">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="lastName" class="form-label">Soyisim</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Soyisim" value="" required formControlName="lastName">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Eposta</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text">@</span>
+                  <input type="text" class="form-control" id="username" placeholder="deneme@örneğin.com" required formControlName="email">
+                <div class="invalid-feedback">
+                    Your username is required.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="email" class="form-label">Şifre</label>
+                <input type="email" class="form-control" id="email" placeholder="Şifre" formControlName="password">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+            </div>
+            <hr class="my-4">
+            <button class="w-100 btn btn-success btn-lg" type="submit" (click)="register()">Kayıt ol</button>
+          </form>
+        </div>
+      </div>
+    </main>
